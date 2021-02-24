@@ -1,0 +1,34 @@
+VAR
+nb_char:INTEGER:=0
+nb_voy:INTEGER:0
+nb_mots:INTEGER:0
+c:char
+
+BEGIN
+
+WHILE(c<>".") DO
+
+nb_char:=nb_char+1
+
+IF(c = " ") THEN
+
+nb_mot:= nb_mot +1
+
+END_IF
+
+IF ( c="a" OR c="e" OR c="o" OR c="y" OR c="u") THEN
+
+
+nb_voy:=nb_voy +1
+
+END_IF
+
+END_WHILE
+
+Write (nb_char +1)
+write (nb_voy)
+write (nb_mot +1)
+
+END
+
+ 
